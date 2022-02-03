@@ -11,8 +11,8 @@
 </head>
 
 <body>
-
-    <section class="quarntine-cal-section" style="line-height: 1;">
+   
+    <section class="quarntine-cal-section" style="line-height: 2;">
         <div class="quarntine-cal-section__wrapper__content">
             <div class="quarntine-cal-section__text">
                 <fieldset>
@@ -55,30 +55,36 @@
 
                 <div id="symptoms_yes_selected">
 
-                    <p>Because you tested positive for COVID-19, stay home and isolate for 5 days from when your
+                    <p>
+                        Because you tested positive for COVID-19, stay home and isolate for 5 days from when your
                         symptoms began.
                         If your symptoms have gotten better after 5 days at home, you can leave your house if you
                         continue to
-                        wear a mask for an additional 5 days.</p>
-                    <p>If you still have a fever or are not feeling that symptoms have gotten better after 5 days, you
+                        wear a mask for an additional 5 days.
+                        <br>
+                        (5 Days Home then 5 Days Masking.)
+                        <br>
+                        If you still have a fever or are not feeling that symptoms have gotten better after 5 days, you
                         should
-                        continue to stay home a bit longer. </p>
-
-                    <p>You should stay home until:</p>
-                    <ul>
-                        <li>
-                            24 hours after your fever resolves and you are not using fever reducing medications (such as
-                            Tylenol
-                            or ibuprofen); and,
-                        </li>
-                        <li>
-                            symptoms have improved.
-                        </li>
-                    </ul>
-                    <p> Continue to wear a mask around others for the full 10 days after your symptoms started. If you
-                        cannot
-                        mask, continue to isolate at home for the 5 additional days.
-
+                        continue to stay home a bit longer.
+                    
+                        <br>
+                        You should stay home until:
+                        
+                            <ul>
+                                <li>
+                                    24 hours after your fever resolves and you are not using fever reducing medications (such as
+                                    Tylenol
+                                    or ibuprofen); and,
+                                </li>
+                                <li>
+                                    symptoms have improved.
+                                </li>
+                            </ul>
+                   
+                        Continue to wear a mask around others for the full 10 days after your symptoms started. If you
+                        cannot mask, continue to isolate at home for the 5 additional days.
+                    
                     </p>
 
                 </div>
@@ -91,11 +97,13 @@
                         the day you had your test. After 5 days, you can leave your house if you continue to wear a mask
                         around
                         others for an additional 5 days.
+                        <br>
+                        (5 Days Home then 5 Days Masking.)
+                        <br>
+                        If you cannot mask, continue to isolate at home for the 5 additional days.
                     </p>
                     <p>
-                        If you cannot mask, continue to isolate at home for the 5 additional days. (5 Days Home then 5
-                        Days
-                        Masking.)
+                        
                     </p>
 
                 </div>
@@ -105,7 +113,7 @@
 
                 <!-- Second Flow -->
 
-                <div id="symptoms_closeContact">
+                <div id="symptoms_closeContact" style="line-height: 1rem;">
                     <fieldset>
                         <legend>
                             Which of the following applies to you?
@@ -114,22 +122,28 @@
                         <div id="symptoms_closeContact_uptodate_Choice">
                             <input type="radio" id="uptodatecheckid" name="uptodatecheck" value="uptoDate"
                             onclick="symptoms_closeContact_handleChange(this)">
-                            <label for="uptodatecheckid">I AM UP TO DATE with my COVID-19 Vaccine:
-                                *Have been boosted, OR
-                                *Completed the primary series of Pfizer or Moderna vaccine within the last 5 months, OR
-                                *Completed the primary series of J&J vaccine within 2 months
+                            <label for="uptodatecheckid">
+                                    <b>I AM UP TO DATE </b> with my COVID-19 Vaccine:
+                                <ul>
+                                    <li>Have been boosted, OR</li>
+                                    <li>Completed the primary series of Pfizer or Moderna vaccine within the last 5 months, OR</li>
+                                    <li>Completed the primary series of J&J vaccine within 2 months</li>
+                                </ul>
                             </label>
                         </div>
-                        <div>
 
+                        <div>
                             <input type="radio" id="notuptodatecheckid" name="uptodatecheck" value="notUptoDate"
                                 onclick="symptoms_closeContact_handleChange(this)">
-                            <label for="notuptodatecheckid">I am NOT UP TO DATE with my COVID-19 Vaccine:
-                                *Completed the primary series of Pfizer or Moderna vaccine over 5 months ago and am NOT
-                                boosted,
-                                OR
-                                *Completed the primary series of J&J vaccine over 2 months ago and am not boosted, OR
-                                *Am not vaccinated</label>
+                            <label for="notuptodatecheckid">
+                                I am <b>NOT UP TO DATE </b> with my COVID-19 Vaccine:
+                                <ul>
+                                    <li>Completed the primary series of Pfizer or Moderna vaccine over 5 months ago and am NOT boosted,OR</li>
+                                    <li>Completed the primary series of J&J vaccine over 2 months ago and am NOT boosted, OR</li>
+                                    <li>Am NOT vaccinated</li>
+                                </ul>
+                                See CDC’s webpage for more information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fvaccines%2Ffully-vaccinated-guidance.html" target="_blank" rel="noopener noreferrer">Staying Up to Date with your COVID-10 Vaccines.</a>
+                            </label>
                         </div>
                     </fieldset>
                 </div>
@@ -152,11 +166,8 @@
                     <p>
 
                         Stay home for the first 5 days from your last exposure (day zero). After that, continue to wear
-                        a mask
-                        around others for an additional 5 days.
-                        If you cannot quarantine you must wear a mask for 10 days. Test on day 5 if possible. If you
-                        develop
-                        symptoms get a test and stay home.
+                        a mask around others for an additional 5 days.
+                        Test on day 5 if possible. If you develop symptoms get a test and stay home.
 
                     </p>
 
@@ -174,6 +185,7 @@
     </section>
     <script src="main.js"></script>
     <script type="text/javascript" src="https://www.mass.gov/themes/custom/mass_theme/overrides/js/iframe_resizer_iframe.js"></script>
+
 
 </body>
 
