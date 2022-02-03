@@ -119,7 +119,7 @@ function genarateResult(selectedDate) {
                    </p>	
                     <p>Recommended date for testing: <b>${addDays(selectedDate, 5)} </b> </p>	
                     <p class="usa-intro">Quarantine at home through: <b>${addDays(selectedDate, 5)} </b></p>
-                    <p class="usa-intro">If you remain asymptomatic, you may return to normal activities: <b>${addDays(selectedDate, 6)}</b></p>
+                    <p class="usa-intro">If you remain asymptomatic, you may return to normal activities while masked: <b>${addDays(selectedDate, 6)}</b></p>
                     <p>Continue to wear a mask through: <b>${addDays(selectedDate, 10)}</b></p>
                     <p>If you develop symptoms at any point during these 10 days, you should also take a test, even if an earlier test was negative.</p>
                 </div>
@@ -159,7 +159,7 @@ function symptoms_yes_no_handleChange(event) {
     if (yes_no_selection === 'yes') {
         symptomsYesSelectedField.style.display = 'block';
         symptomsNoSelectedField.style.display = 'none';
-        symptomsDateLabelField.innerHTML =`Enter the first day your symptoms began`;
+        symptomsDateLabelField.innerHTML =`Enter the first day your <b>symptoms began</b>`;
 
     } else if (yes_no_selection === 'no') {
         symptomsYesSelectedField.style.display = 'none';
