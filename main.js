@@ -167,7 +167,7 @@ function symptoms_yes_no_handleChange(event) {
     } else if (yes_no_selection === 'no') {
         symptomsYesSelectedField.style.display = 'none';
         symptomsNoSelectedField.style.display = 'block';
-        symptomsDateLabelField.innerHTML =`Enter your test collection date`;
+        symptomsDateLabelField.innerHTML =`Enter your <b>test collection date</b>`;
     }
     quarantineDateField.valueAsDate = null;
     if (resultFiled != null) {
