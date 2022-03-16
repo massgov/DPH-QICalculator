@@ -17,6 +17,7 @@ var sympomFlag;
 var yes_no_selection;
 var  uptodate_selection;
 
+
 function padTo2Digits(num) {
     return num.toString().padStart(2, '0');
 }
@@ -52,8 +53,8 @@ function genarateResult(selectedDate) {
                             </p>
                             <p class="usa-intro">Your in-home isolation ENDS on: <b>${addDays(selectedDate, 6)}</b></p>
                             <p></p>
-                            <p class="usa-intro">Continue to wear a mask through: <b>${addDays(selectedDate, 10)} </b> from symptom onset. If
-                                you cannot mask, continue to isolate at home for the 5 additional days.
+                            <p class="usa-intro">You should continue to wear a mask through: <b>${addDays(selectedDate, 10)} </b> from symptom onset. 
+                            If you are unable to mask, you should continue to isolate at home for the 5 additional days.
                             </p>
                             <p>After this date, you may resume your usual activities but should still take precautions to reduce your
                                 risk (i.e. social distancing, frequent handwashing, and wearing a mask when social distancing isn't
@@ -75,7 +76,9 @@ function genarateResult(selectedDate) {
                     </p>	
                      <p class="usa-intro">Your in-home isolation ENDS on: <b>${addDays(selectedDate, 6)}</b></p>
                     <p></p>
-                    <p class="usa-intro">Continue to wear a mask through: <b>${addDays(selectedDate, 10)}</b> from symptom onset. If you cannot mask, continue to isolate at home for the 5 additional days. 
+                    <p class="usa-intro">You should continue to wear a mask through: <b>${addDays(selectedDate, 10)}</b>. 
+                    </br>
+                    If you are unable to mask, you should continue to isolate at home for the 5 additional days. 
                     </p>
                     <p>After this date, you may resume your usual activities but should still take precautions to reduce your risk (i.e. social distancing, frequent handwashing, and wearing a mask when social distancing isn't possible).</p>
                 </div>
@@ -120,7 +123,7 @@ function genarateResult(selectedDate) {
                     <p>Recommended date for testing: <b>${addDays(selectedDate, 5)} </b> </p>	
                     <p class="usa-intro">Quarantine at home through: <b>${addDays(selectedDate, 5)} </b></p>
                     <p class="usa-intro">If you remain asymptomatic, you may return to normal activities while masked: <b>${addDays(selectedDate, 6)}</b></p>
-                    <p>Continue to wear a mask through: <b>${addDays(selectedDate, 10)}</b></p>
+                    <p>You should continue to wear a mask through: <b>${addDays(selectedDate, 10)}</b></p>
                     <p>If you develop symptoms at any point during these 10 days, you should also take a test, even if an earlier test was negative.</p>
                 </div>
             </div>
