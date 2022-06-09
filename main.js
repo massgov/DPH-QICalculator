@@ -48,8 +48,8 @@ function genarateResult(selectedDate) {
                             </p>
 
                             <p>
-                                If your symptoms have improved and 24 hours have passed without a fever (without the use of medication),
-                                your last day of in-home isolation is:<b> ${addDays(selectedDate, 5)} </b>
+                                If your symptoms have improved and 24 hours have passed without a fever and without the use of fever-reducing medication ,
+                                your last FULL day of in-home isolation is:<b> ${addDays(selectedDate, 5)} </b>
                             </p>
                             <p class="usa-intro">Your in-home isolation ENDS on: <b>${addDays(selectedDate, 6)}</b></p>
                             <p></p>
@@ -72,7 +72,7 @@ function genarateResult(selectedDate) {
                     </p>
 
                     <p>
-                        Your last FULL day of isolation is: <b>${addDays(selectedDate, 5)}</b>
+                        Your last FULL day of in-home isolation is: <b>${addDays(selectedDate, 5)}</b>
                     </p>	
                      <p class="usa-intro">Your in-home isolation ENDS on: <b>${addDays(selectedDate, 6)}</b></p>
                     <p></p>
@@ -95,7 +95,7 @@ function genarateResult(selectedDate) {
                     <b>QUARANTINE CALCULATOR</b> 
                     </p>
                     <p>
-                        If you are <u>up to date</u> with your vaccines
+                        If you are <u>up to date</u> with your vaccines:
                     </p>
                     <p>
                         Recommended date for testing: <b>${addDays(selectedDate, 5)}</b>
@@ -118,7 +118,7 @@ function genarateResult(selectedDate) {
                         <b>QUARANTINE CALCULATOR</b>  
                    </p>
                    <p>
-                        <b>If you are unvaccinated or not fully vaccinated/up to date with your COVID-19 Vaccines:</b>
+                        If you are <u>unvaccinated</u> or <u>NOT fully vaccinated/up to date with your COVID-19 vaccines</u>:
                    </p>	
                     <p>Recommended date for testing: <b>${addDays(selectedDate, 5)} </b> </p>	
                     <p class="usa-intro">Quarantine at home through: <b>${addDays(selectedDate, 5)} </b></p>
